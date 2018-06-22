@@ -7,4 +7,4 @@
 
 文章详细的介绍了Dagger2的一些基础注解的用法，跟着文章的思路去好好去练习，对你的入门是有很大帮助的。
 
-介绍讲解都在博客里，博客地址： https://blog.csdn.net/wol965/article/details/80777201
+博客地址： https://blog.csdn.net/wol965/article/details/80777201
