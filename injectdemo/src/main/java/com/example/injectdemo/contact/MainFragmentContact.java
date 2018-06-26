@@ -16,14 +16,14 @@ public class MainFragmentContact {
     }
 
     public static class Presenter {
-        private UserRepostory userRepostory;
+       
         private MainView mainView;
-        private String userName;
+        
+        @Inject
+        protected UserFactory mUserFactory;
 
         @Inject
-        public Presenter(UserRepostory userRepostory) {
-            this.userRepostory = userRepostory;
-            userName = this.userRepostory.getUser().getName();
+        public Presenter() {
         }
 
         public void setView(MainView mainView) {
@@ -31,12 +31,12 @@ public class MainFragmentContact {
         }
 
         public void showToastBtnClick() {
-            String msg = "hello " + userName;
+            String msg = "hello " + userRepostory.getUser().getName();
             mainView.showToast(msg);
         }
 
         public void setUserNameBtnClick() {
-            this.mainView.setUserName(userName);
+            this.mainView.setUserName(userRepostory.getUser().getName());
         }
     }
 
