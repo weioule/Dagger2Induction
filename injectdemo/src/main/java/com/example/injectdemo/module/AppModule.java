@@ -30,6 +30,7 @@ public class AppModule {
         return context;
     }
 
+    @Singleton
     @Provides
     public ToastUtil getToastUtil(Context context) {
         return new ToastUtil(context);
