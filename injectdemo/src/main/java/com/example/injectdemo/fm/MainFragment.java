@@ -22,7 +22,7 @@ import javax.inject.Inject;
 public class MainFragment extends Fragment implements MainFragmentContact.MainView, View.OnClickListener {
 
     @Inject
-    MainFragmentContact.Presenter mPresenter;
+    protected MainFragmentContact.Presenter mPresenter;
 
     @Inject
     ToastUtil mToastUtil;
