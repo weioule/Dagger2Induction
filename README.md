@@ -1,5 +1,4 @@
-# Dagger2
-
+#Dagger2
 这是一个Dagger2入门demo
 
 在查阅一些dagger2入门学习资料后，了解了一些基础的注解的使用方法及作用，弄懂了Dagger2的注入思路。
